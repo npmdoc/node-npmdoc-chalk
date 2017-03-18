@@ -1,0 +1,177 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api-documentation for
+    <a
+        
+        href="https://github.com/chalk/chalk#readme"
+        
+    >chalk (v1.1.3)</a>
+</h1>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.chalk">module chalk</a><ol>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">chalk.</span>enabled</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">chalk.</span>supportsColor</span>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.chalk.hasColor">
+            function <span class="apidocSignatureSpan">chalk.</span>hasColor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.chalk.stripColor">
+            function <span class="apidocSignatureSpan">chalk.</span>stripColor
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">chalk.</span>styles</span>
+            
+        </li>
+        
+    </ol></li>
+    
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.chalk" id="apidoc.module.chalk">module chalk</a></h1>
+    
+    
+    
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.chalk.hasColor" id="apidoc.element.chalk.hasColor">
+        function <span class="apidocSignatureSpan">chalk.</span>hasColor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasColor = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+console.log(chalk.styles.red);
+//=&#x3e; {open: &#x27;\u001b[31m&#x27;, close: &#x27;\u001b[39m&#x27;}
+
+console.log(chalk.styles.red.open + &#x27;Hello&#x27; + chalk.styles.red.close);
+```
+
+### chalk.<span class="apidocCodeKeywordSpan">hasColor</span>(string)
+
+Check whether a string [has color](https://github.com/chalk/has-ansi).
+
+### chalk.stripColor(string)
+
+[Strip color](https://github.com/chalk/strip-ansi) from a string.
+...</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.chalk.stripColor" id="apidoc.element.chalk.stripColor">
+        function <span class="apidocSignatureSpan">chalk.</span>stripColor
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stripColor = function (str) {
+	return typeof str === &#x27;string&#x27; ? str.replace(ansiRegex, &#x27;&#x27;) : str;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+console.log(chalk.styles.red.open + &#x27;Hello&#x27; + chalk.styles.red.close);
+```
+
+### chalk.hasColor(string)
+
+Check whether a string [has color](https://github.com/chalk/has-ansi).
+
+### chalk.<span class="apidocCodeKeywordSpan">stripColor</span>(string)
+
+[Strip color](https://github.com/chalk/strip-ansi) from a string.
+
+Can be useful in combination with `.supportsColor` to strip color on externally styled text when it&#x27;s not supported.
+
+Example:
+...</pre></li>
+    </ul>
+    
+    
+    
+    
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
