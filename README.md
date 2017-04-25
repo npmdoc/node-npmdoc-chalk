@@ -1,6 +1,6 @@
 # npmdoc-chalk
 
-#### api documentation for  chalk (v1.1.3)  [![npm package](https://img.shields.io/npm/v/npmdoc-chalk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-chalk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-chalk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-chalk)
+#### basic api documentation for  [chalk (v1.1.3)](https://github.com/chalk/chalk#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-chalk.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-chalk) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-chalk.svg)](https://travis-ci.org/npmdoc/node-npmdoc-chalk)
 
 #### Terminal string styling done right. Much color.
 
@@ -21,28 +21,40 @@
 ```json
 
 {
-    "name": "chalk",
-    "version": "1.1.3",
+    "bugs": {
+        "url": "https://github.com/chalk/chalk/issues"
+    },
+    "dependencies": {
+        "ansi-styles": "^2.2.1",
+        "escape-string-regexp": "^1.0.2",
+        "has-ansi": "^2.0.0",
+        "strip-ansi": "^3.0.0",
+        "supports-color": "^2.0.0"
+    },
     "description": "Terminal string styling done right. Much color.",
-    "license": "MIT",
-    "repository": "chalk/chalk",
-    "maintainers": [
-        "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
-        "Joshua Appelman <jappelman@xebia.com> (jbnicolai.com)",
-        "JD Ballard <i.am.qix@gmail.com> (github.com/qix-)"
-    ],
+    "devDependencies": {
+        "coveralls": "^2.11.2",
+        "matcha": "^0.6.0",
+        "mocha": "*",
+        "nyc": "^3.0.0",
+        "require-uncached": "^1.0.2",
+        "resolve-from": "^1.0.0",
+        "semver": "^4.3.3",
+        "xo": "*"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "a8115c55e4a702fe4d150abd3872822a7e09fc98",
+        "tarball": "https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz"
+    },
     "engines": {
         "node": ">=0.10.0"
-    },
-    "scripts": {
-        "test": "xo && mocha",
-        "bench": "matcha benchmark.js",
-        "coverage": "nyc npm test && nyc report",
-        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
     },
     "files": [
         "index.js"
     ],
+    "gitHead": "0d8d8c204eb87a4038219131ad4d8369c9f59d24",
+    "homepage": "https://github.com/chalk/chalk#readme",
     "keywords": [
         "color",
         "colour",
@@ -66,29 +78,38 @@
         "command-line",
         "text"
     ],
-    "dependencies": {
-        "ansi-styles": "^2.2.1",
-        "escape-string-regexp": "^1.0.2",
-        "has-ansi": "^2.0.0",
-        "strip-ansi": "^3.0.0",
-        "supports-color": "^2.0.0"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "qix"
+        },
+        {
+            "name": "sindresorhus"
+        },
+        {
+            "name": "unicorn"
+        }
+    ],
+    "name": "chalk",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chalk/chalk.git"
     },
-    "devDependencies": {
-        "coveralls": "^2.11.2",
-        "matcha": "^0.6.0",
-        "mocha": "*",
-        "nyc": "^3.0.0",
-        "require-uncached": "^1.0.2",
-        "resolve-from": "^1.0.0",
-        "semver": "^4.3.3",
-        "xo": "*"
+    "scripts": {
+        "bench": "matcha benchmark.js",
+        "coverage": "nyc npm test && nyc report",
+        "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+        "test": "xo && mocha"
     },
+    "version": "1.1.3",
     "xo": {
         "envs": [
             "node",
             "mocha"
         ]
-    }
+    },
+    "bin": {}
 }
 ```
 
